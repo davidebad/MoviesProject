@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity {
                     SearchResponse searchResponse = response.body();
 
                     Gson gson = new Gson();
-                    String json = gson.toJson(searchResponse);
-                    System.out.println("Risposta json: " + json);
 
                     List<Movie> movies = searchResponse.getMovies();
                     for (Movie movie : movies) {
